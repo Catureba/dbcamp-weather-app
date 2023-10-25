@@ -1,4 +1,71 @@
-body{
-  background-image: linear-gradient(to bottom, #352163 ,#331972 ,#33143C) ;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to bottom, #352163, #331972, #33143c);
   min-height: 100vh;
+}
+
+h1,h2,h3,h4,span,div{
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+label {
+  font-size: 24px;
+  font-weight: 600;
+  display: block;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.colapse {
+  z-index: 1000;
+  visibility: visible;
+  height: 200px;
+  transition: 1s;
+  overflow-y: hidden;
+}
+
+#menu {
+  padding: 0;
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  background-color: #523d7f;
+  width: calc(100% - 50px);
+  height: 0px;
+  padding: 10px 0 0 50px;
+  z-index: 1000;
+  transition: 1s;
+  overflow-y: hidden;
+}
+
+#menu > li {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
